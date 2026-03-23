@@ -2,7 +2,8 @@
 
 ## 项目简介
 
-![image-20260323085402279](C:\Users\81955\AppData\Roaming\Typora\typora-user-images\image-20260323085402279.png)
+<img width="1269" height="676" alt="image" src="https://github.com/user-attachments/assets/d23cd94f-0cbe-45db-b25d-9b5add42d200" />
+
 
 ---
 
@@ -66,8 +67,7 @@ val_ids.tofile(os.path.join(os.path.dirname(__file__),'val.bin'))
  执行效果 
 
  运行 prepare.py`后，poemtext 文件夹下会生成 train.bin（训练集）和 val.bin（验证集）二进制文件，供后续模型训练使用 
-
-![image-20260323090241260](C:\Users\81955\AppData\Roaming\Typora\typora-user-images\image-20260323090241260.png)
+<img width="504" height="394" alt="image" src="https://github.com/user-attachments/assets/b5bc296b-380e-469f-b047-b372b3e1247b" />
 
 ### [第⼆步**]**模型的训练
 
@@ -113,12 +113,10 @@ python train.py config/train_poemtext_char.py
 **训练效果**
 
  训练过程中会实时打印损失值、验证集精度等日志，训练完成后，项目根目录会生成 out-poemtext-char 文件夹，其中 ckpt.pt 为训练好的模型权重文件（基于 5.8 万首唐诗训练得到）。 
+<img width="969" height="803" alt="b2a25706588a469e85a1735b7ee7f9ab" src="https://github.com/user-attachments/assets/cd443f18-c09d-4afd-b098-9490dc82f753" />
+<img width="1062" height="840" alt="4b812690b4be4aba852debe9db1a72b6" src="https://github.com/user-attachments/assets/0ba7b496-7b9c-413b-bc96-438cc6232b0d" />
+<img width="490" height="153" alt="image" src="https://github.com/user-attachments/assets/763f2d75-9387-41a0-8555-3bb1a64d4afc" />
 
-![bb12e43310e449eeb2e84514cd3fbd4b](C:\Users\81955\AppData\Local\Temp\bb12e43310e449eeb2e84514cd3fbd4b.png)
-
-![acc36583c8a84509b5752573356cbf46](C:\Users\81955\AppData\Local\Temp\acc36583c8a84509b5752573356cbf46.png) 
-
-![image-20260323090640647](C:\Users\81955\AppData\Roaming\Typora\typora-user-images\image-20260323090640647.png)
 
 ### [第三步]模型的推理及采样： 
 
@@ -134,7 +132,8 @@ python sample.py --out_dir=out-poemtext-char
 
 **生成效果**
 
-![fb941044dd7b4261b0d92b0bdaf37d24](C:\Users\81955\AppData\Local\Temp\fb941044dd7b4261b0d92b0bdaf37d24.png)
+<img width="1721" height="813" alt="ee5654e4bf324bfbb78bd38f20bf734b" src="https://github.com/user-attachments/assets/3b3706cf-aef0-4902-9ab2-25cdc8a7d2ca" />
+
 
 ## 核心参数说明
 
